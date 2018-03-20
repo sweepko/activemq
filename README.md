@@ -1,2 +1,6 @@
 # activemq
 ActiveMq消息中间件传输文件
+利用activemq消息队列在两台服务器之间发送文件，
+监听本地目录，有文件则以bytemessage的形式发送，
+消费者接收消息并字节消息写入本地，向生产者发送回执信息。
+此外还有blobmessage和streammessage方式发送文件。
